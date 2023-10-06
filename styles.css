@@ -1,0 +1,185 @@
+/* Skate's Style page */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  min-height: 10vh;
+  align-items: center;
+  background: #eee;
+}
+
+blue {
+  color: #008eec;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #333;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 25%;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 25px 0;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  transition: 0.2s ease;
+  left: 0;
+  right: 0;
+  width: 0;
+  bottom: 15px;
+  height: 2px;
+  background: #008eec;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  height: 90vh;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#header .info {
+  text-align: center;
+}
+
+#header .info h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+#header .info p {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+#header .info a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px auto 0;
+  width: 50%;
+  color: #333;
+  transition: 0.2s ease-in-out;
+  border: 2px solid #333;
+}
+
+#header .info a:hover {
+  color: #008eec;
+  border-color: #008eec;
+}
+
+#header img {
+  height: 400px;
+  width: auto;
+  border: 8px solid #008eec;
+}
+
+#prices {
+  height: 80vh;
+  background: #efefef;
+  position: relative;
+  border-top: 1px solid #008eec;
+  border-bottom: 1px solid #008eec;
+}
+
+#prices h1 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  border-bottom: 2px solid rgb(0, 142, 236);
+  transform: translateX(-50%);
+}
+
+/***************************************************/
+/*  Price Crap */
+
+#prices .itemContainer {
+  display: flex;
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#prices .itemContainer .item {
+  background: rgba(0, 142, 236, 0.4);
+  padding: 50px;
+  width: 33.3%;
+  margin: 0 50px;
+}
+
+#prices .item h2 {
+  font-size: 25px;
+  text-align: right;
+}
+#prices .item h3 {
+  font-size: 30px;
+  text-align: right;
+}
+#prices .item h3::after {
+  content: " USD";
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: #333;
+  margin: 10px 0;
+}
+
+/* REVIEWS */
+
+#reviews {
+  height: 80vh;
+  background: #fff;
+  position: relative;
+}
+
+#reviews h1 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  border-bottom: 2px solid rgb(0, 142, 236);
+  transform: translateX(-50%);
+}
